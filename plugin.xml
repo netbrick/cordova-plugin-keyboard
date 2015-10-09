@@ -14,18 +14,6 @@
     	<clobbers target="window.Keyboard" />
     </js-module>
 
-    <!-- ios -->
-    <platform name="ios">
-        <config-file target="config.xml" parent="/*">
-            <feature name="Keyboard">
-                <param name="ios-package" value="CDVKeyboard" onload="true" />
-            </feature>
-        </config-file>
-
-        <header-file src="src/ios/CDVKeyboard.h" />
-        <source-file src="src/ios/CDVKeyboard.m" />
-    </platform>
-
     <!-- android -->
     <platform name="android">
         <config-file target="config.xml" parent="/*">
